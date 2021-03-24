@@ -1,0 +1,98 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: gray;
+}
+
+.toggle{
+    cursor: pointer;
+    font-size: 25px;
+    color:#fff;
+}
+
+.nav-ul{
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    transform: translateX(-100%);
+    transition: .5s all;
+    overflow-y: scroll;
+    max-height: 600px;
+    
+}
+
+/*.show{
+    transform: translateX(0);
+}*/
+
+nav li a{
+    display: block;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px;
+    background-color: gray;
+}
+
+nav li li a:hover{
+    background-color: rgba(0,0,0,0.6);
+}
+
+nav li{
+    width: 300px;
+} 
+
+.notes, .cota, .ferramenta{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-news, .nav-cota, .nav-ferramenta{
+    display: none;
+    transition: .9s all;
+}
+
+.shownews, .showcota, .showferramenta{
+    display: block;
+    transition: .9s all;
+   
+}
+
+.login{
+    font-size: 1.3rem;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    background: rgba(0,0,0,0.6);
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0,0,0,0.9);
+}
+
+/*::-webkit-scrollbar-button{
+    background-color: red;
+}*/
+
+::-webkit-scrollbar-thumb{
+    border-radius: 4px;
+    background: rgb(66, 66, 66);  
+}
+
+::-webkit-scrollbar-thumb:hover{
+    border-radius: 4px;
+    background: red;  
+}
