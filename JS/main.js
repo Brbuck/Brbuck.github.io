@@ -4,7 +4,7 @@ const exit = document.querySelector('.exit')
 
 
 toggle.addEventListener('click', () =>{
-    menu.classList.toggle('show')
+    menu.classList.add('show')
 })
 
 exit.addEventListener('click', () =>{
