@@ -59,17 +59,17 @@ nav li{
     width: 300px;
 } 
 
-.notes, .cota, .ferramenta{
+.news, .cotacao, .ferramenta{
     display: flex;
     justify-content: space-between;
 }
 
-.nav-news, .nav-cota, .nav-ferramenta{
+.nav-news, .nav-cotacao, .nav-ferramenta{
     display: none;
     transition: .9s all;
 }
 
-.shownews, .showcota, .showferramenta{
+.shownews, .showcotacao, .showferramenta{
     display: block;
     transition: .9s all;
    
