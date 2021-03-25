@@ -20,9 +20,17 @@ header{
     color:#fff;
 }
 
+.logo{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    background: linear-gradient(to right, blue, red);
+    border-radius: 30px;
+}
+
 .nav-ul{
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 0px;
     transform: translateX(-100%);
     transition: .5s all;
@@ -31,9 +39,9 @@ header{
     
 }
 
-/*.show{
+.show{
     transform: translateX(0);
-}*/
+}
 
 nav li a{
     display: block;
@@ -72,7 +80,7 @@ nav li{
     color: #fff;
     border: 1px solid #fff;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 ::-webkit-scrollbar{
