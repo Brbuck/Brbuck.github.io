@@ -1,8 +1,14 @@
 const toggle = document.querySelector('.toggle')
 const menu = document.querySelector('.nav-ul')
+const exit = document.querySelector('.exit')
+
 
 toggle.addEventListener('click', () =>{
     menu.classList.toggle('show')
+})
+
+exit.addEventListener('click', () =>{
+    menu.classList.remove('show')
 })
 
 
