@@ -7,6 +7,8 @@
 }
 
 header{
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +28,7 @@ header{
     padding: 20px 10px;
     font-size: 25px;
     color:#fff;
-    margin-left: 260px;
+    margin-left: 240px;
 }
 
 
@@ -40,9 +42,11 @@ header{
 }
 
 .nav-ul{
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
+    height: 100%;
+    background-color: rgb(35, 35, 35);
     transform: translateX(-100%);
     transition: .5s all;
     overflow-y: scroll;
@@ -57,7 +61,7 @@ header{
 nav li a{
     display: block;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 15px;
     background-color: rgb(35, 35, 35);
 }
@@ -74,7 +78,7 @@ nav li li a:hover{
 
 
 nav li{
-    width: 300px;
+    width: 280px;
     background-color:  rgb(35, 35, 35);
 } 
 
@@ -83,7 +87,24 @@ nav li{
     justify-content: space-between;
 }
 
-.nav-news, .nav-cotacao, .nav-ferramenta{
+nav ul ul{
+    position: static;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .8s;
+
+}
+
+nav ul ul.shownews{
+    height: auto;
+    max-height: 300px;
+}
+
+nav ul ul.showcotacao, nav ul ul.showferramenta{
+    height: auto;
+    max-height: 300px;
+}
+/*.nav-news, .nav-cotacao, .nav-ferramenta{
     display: none;
     transition: .9s all;
 }
@@ -92,7 +113,7 @@ nav li{
     display: block;
     transition: .9s all;
    
-}
+}*/
 
 .login{
     font-size: 1.3rem;
