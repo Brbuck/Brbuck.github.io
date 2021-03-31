@@ -29,8 +29,12 @@ header{
     font-size: 25px;
     color:#fff;
     margin-left: 240px;
+    
 }
 
+.exit:hover{
+    background-color: transparent;
+}
 
 
 .logo{
@@ -46,11 +50,12 @@ header{
     top: 0px;
     left: 0px;
     height: 100%;
+    width: 300px;
     background-color: rgb(35, 35, 35);
     transform: translateX(-100%);
     transition: .5s all;
     overflow-y: scroll;
-    max-height: 600px;
+    max-height: 750px;
     
 }
 
@@ -75,12 +80,6 @@ nav li li a:hover{
     color: #111;
 }
 
-
-
-nav li{
-    width: 280px;
-    background-color:  rgb(35, 35, 35);
-} 
 
 .news, .cotacao, .ferramenta{
     display: flex;
